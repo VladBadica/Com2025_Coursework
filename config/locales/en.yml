@@ -32,3 +32,7 @@
 en:
   app_title: My Website
   app_description: A website to manage the Judo competitions and athletes
+  home:
+    home:
+      title: Judo C&A Management
+      welcome: Welcome! Here you can manage the competitions and athletes for Judo 
