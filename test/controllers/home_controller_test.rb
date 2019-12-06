@@ -2,8 +2,12 @@ require 'test_helper'
 
 class HomeControllerTest < ActionDispatch::IntegrationTest
   test "should get home" do
-    get home_home_url
+    get root_url
     assert_response :success
+
+    assert_select 'title', 'My Website'
+    assert_select 'h1', 'Judo C&A Management'
+    assert_select 'p', 'Welcome! Here you can manage the competitions and athletes for Judo'
   end
 
   test "should get contact" do
