@@ -30,3 +30,8 @@
 h1 {
     text-transform: uppercase;
 }
+
+form label, form input {
+    display: block;
+    margin: 10px;
+}
