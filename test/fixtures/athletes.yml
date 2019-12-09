@@ -2,14 +2,14 @@
 
 one:
   name: MyString
-  age: 
+  age: 1
   weight: 1.5
   sex: MyString
   description: MyText
 
 two:
   name: MyString
-  age: 
+  age: 1
   weight: 1.5
   sex: MyString
   description: MyText
