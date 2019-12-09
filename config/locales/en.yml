@@ -53,3 +53,8 @@ en:
     request_contact:
       no_email: The email address cannot be empty.
       email_sent: Thank you. We will be in touch sorthly.
+  shared:
+    header: 
+      welcome_message: Welcome to my header!
+    footer: 
+      footer_message: "&copy; My Website"
