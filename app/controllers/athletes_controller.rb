@@ -26,6 +26,8 @@ class AthletesController < ApplicationController
   def create
     @athlete = Athlete.new(athlete_params)
 
+    puts @athlete.inspect
+
     respond_to do |format|
       if @athlete.save
         format.html { redirect_to @athlete, notice: 'Athlete was successfully created.' }

@@ -17,7 +17,7 @@ class AthletesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create athlete" do
     assert_difference('Athlete.count') do
-      post athletes_url, params: { athlete: { age: @athlete.age, description: @athlete.description, name: @athlete.name, sex: @athlete.sex, weight: @athlete.weight } }
+      post athletes_url, params: { athlete: { age: @athlete.age, description: @athlete.description, name: @athlete.name + "x", sex: @athlete.sex, weight: @athlete.weight } }
     end
 
     assert_redirected_to athlete_url(Athlete.last)
