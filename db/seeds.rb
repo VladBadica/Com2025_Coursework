@@ -5,7 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-    welcome = Athlete.where(name: 'Vlad Badica').first
-    welcome.delete if welcome
+    athlete = Athlete.where(name: 'Vlad Badica').first
+    athlete.delete if athlete
 
     athlete = Athlete.create([name: 'Vlad Badica', age: 19, weight: 68.5, sex: 'male'])
+    
+    competition = Competition.where(name: 'Sheffield', date:Date.new(2019,1,12)).first
+    competition.delete if competition
+
+    competition = Competition.create([name: 'Sheffield', date:Date.new(2019,1,12)])
