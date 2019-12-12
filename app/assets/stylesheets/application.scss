@@ -20,11 +20,18 @@
 
  $font: 'Times New Roman', 'Times', serif;
  $color: #FFFFFF;
+ $font-sizeheader: 25px;
 
  body {
     font-family: $font;
     background-color: $color;
-    margin: 10px;
+}
+main {    
+    margin: 0px;
+    padding: 20px;
+}
+nav{
+    font-size: $font-sizeheader;    
     padding: 10px;
 }
 h1 {

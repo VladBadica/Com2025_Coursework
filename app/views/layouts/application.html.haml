@@ -21,7 +21,8 @@
       = content_tag :div, content_tag(:p, value), id: "#{key}" unless value.blank?
     
     = render 'shared/header'
-
-    = yield
+    
+    %main
+      = yield
 
     =render 'shared/footer'

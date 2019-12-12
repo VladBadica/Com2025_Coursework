@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :athletes
   root 'home#home'
   get 'athletes', to: 'home#athletes'
   get 'contact', to:'home#contact'
