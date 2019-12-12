@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :competitions
+  resources :athletes
   root 'home#home'
   get 'athletes', to: 'home#athletes'
   get 'contact', to:'home#contact'
