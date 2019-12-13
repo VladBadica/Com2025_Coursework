@@ -11,13 +11,13 @@
     = f.text_field :name
   .field
     = f.label :sex
-    = f.text_field :sex
+    = f.select :sex, options_for_select(['male', 'female'])
   .field
     = f.label :age
-    = f.number_field :age
+    = f.number_field :age, min: 18, max: 100
   .field
     = f.label :weight
-    = f.text_field :weight
+    = f.number_field :weight, min: 40, max: 150, step: :any
   .field
     = f.label :description
     = f.text_field :description
