@@ -24,7 +24,13 @@
 
  body {
     font-family: $font;
+    position: relative;
+    min-height: 100%;
+    margin: 0px;
     background-color: $color;
+}
+div#myID{
+     min-height: calc(100vh - 166px);
 }
 main {    
     margin: 0px;
@@ -39,6 +45,10 @@ h1 {
 }
 header {
      background-color: red;
+}
+footer{
+    height: 50px;
+    background-color: red;
 }
 form label, form input {
     display: block;

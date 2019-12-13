@@ -2,8 +2,10 @@ Rails.application.routes.draw do
   resources :competitions
   resources :athletes
   root 'home#home'
-  get 'athletes', to: 'home#athletes'
-  get 'contact', to:'home#contact'
+
   get 'aboutUs', to: 'home#aboutUs'
+  get 'athletes', to: 'home#athletes'
+  get 'competitions', to: 'home#competitions'
+  get 'contact', to:'home#contact'
   post 'request_contact', to: 'home#request_contact'
 end
