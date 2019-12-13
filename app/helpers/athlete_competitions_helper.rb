@@ -1,0 +1,2 @@
+module AthleteCompetitionsHelper
+end

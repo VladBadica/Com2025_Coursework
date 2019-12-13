@@ -3,4 +3,6 @@ class Athlete < ApplicationRecord
     validates :sex, presence: true
     validates :weight, presence: true
     validates :age, presence: true
+
+    has_many :athlete_competitions
 end

@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Athlete:
+  = @athlete_competition.athlete.name
+%p
+  %b Competition:
+  = @athlete_competition.competition.name
+
+= link_to 'Edit', edit_athlete_competition_path(@athlete_competition)
+\|
+= link_to 'Back', athlete_competitions_path

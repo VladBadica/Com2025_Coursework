@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_12_185434) do
+ActiveRecord::Schema.define(version: 2019_12_13_130643) do
+
+  create_table "athlete_competitions", force: :cascade do |t|
+    t.integer "athlete_id"
+    t.integer "competition_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["athlete_id"], name: "index_athlete_competitions_on_athlete_id"
+    t.index ["competition_id"], name: "index_athlete_competitions_on_competition_id"
+  end
 
   create_table "athletes", force: :cascade do |t|
     t.string "name", null: false

@@ -19,7 +19,9 @@
 
 
  $font: 'Times New Roman', 'Times', serif;
- $color: #FFFFFF;
+ $color: #CAE7DF;
+ $header-color: #FCC133;
+ $footer-color: #FCC133;
  $font-sizeheader: 25px;
 
  body {
@@ -44,11 +46,11 @@ h1 {
     text-transform: uppercase;
 }
 header {
-     background-color: red;
+     background-color: $header-color;
 }
 footer{
     height: 50px;
-    background-color: red;
+    background-color: $footer-color;
 }
 form label, form input {
     display: block;

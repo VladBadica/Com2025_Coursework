@@ -4,7 +4,7 @@ class HomeController < ApplicationController
 
   def aboutUs
   end
-    
+  
   def contact
   end
 

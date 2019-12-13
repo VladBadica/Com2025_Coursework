@@ -1,0 +1,23 @@
+%h1 Listing athlete_competitions
+
+%table
+  %thead
+    %tr
+      %th Athlete
+      %th Competition
+      %th
+      %th
+      %th
+
+  %tbody
+    - @athlete_competitions.each do |athlete_competition|
+      %tr
+        %td= athlete_competition.athlete.name
+        %td= athlete_competition.competition.name
+        %td= link_to 'Show', athlete_competition
+        %td= link_to 'Edit', edit_athlete_competition_path(athlete_competition)
+        %td= link_to 'Destroy', athlete_competition, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Athlete competition', new_athlete_competition_path
