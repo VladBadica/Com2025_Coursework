@@ -35,10 +35,17 @@ en:
   home:
     aboutUs: 
       title: About Us
-      info: This is the ideal website to register to judo competitions!
+      info: This is the ideal website to register to judo competitions! This website has been developed for a corsework! Started producing it in 2019!
+      promotional_image: judo001.jpeg
+      info_email: "Contact email: info@myjudo.com"
+      info_course: The module name is Web Applications Development
     home:
       title: Judo C&A Management
       welcome: Welcome! Here you can manage the competitions and athletes for Judo 
+      image1: judo01.jpeg
+      image2: judo02.jpeg
+      image3: judo03.jpeg
+      image4: judo04.jpeg
     contact:
       title: Contact Us
       contact_us: Complete the following form to get in touch with us.

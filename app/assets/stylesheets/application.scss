@@ -38,21 +38,47 @@ main {
     margin: 0px;
     padding: 20px;
 }
+
 nav{
     font-size: $font-sizeheader;    
     padding: 10px;
 }
+
 h1 {
     text-transform: uppercase;
 }
+
 header {
      background-color: $header-color;
 }
+
 footer{
     height: 50px;
     background-color: $footer-color;
 }
+
 form label, form input {
     display: block;
     margin: 10px;
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid#ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+  
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
 }
