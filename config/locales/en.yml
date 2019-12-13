@@ -33,6 +33,9 @@ en:
   app_title: My Website
   app_description: A website to manage the Judo competitions and athletes
   home:
+    aboutUs: 
+      title: About Us
+      info: This is the ideal website to register to judo competitions!
     home:
       title: Judo C&A Management
       welcome: Welcome! Here you can manage the competitions and athletes for Judo 
@@ -55,9 +58,10 @@ en:
       email_sent: Thank you. We will be in touch sorthly.
   shared:
     header: 
-      home: Home
-      contact: Contact
+      aboutUS: About Us
       athletes: Athletes
+      contact: Contact
       delimiter: "|"
+      home: Home
     footer: 
       footer_message: "&copy; My Website"

@@ -17,7 +17,7 @@ class CompetitionsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create competition" do
     assert_difference('Competition.count') do
-      post competitions_url, params: { competition: { date: @competition.date, name: @competition.name } }
+      post competitions_url, params: { competition: { date: @competition.date, name: @competition.name + 'rnd1'} }
     end
 
     assert_redirected_to competition_url(Competition.last)
