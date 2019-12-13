@@ -10,7 +10,7 @@ class AthleteTest < ActiveSupport::TestCase
 
   test 'should save valid athlete' do
     athlete = Athlete.new
-    athlete.name = 'Vlad Badica'
+    athlete.name = 'Mike Ross'
     athlete.sex = 'male'
     athlete.weight = 68.5
     athlete.age = 19
@@ -21,7 +21,7 @@ class AthleteTest < ActiveSupport::TestCase
 
   test 'should not save duplicate athlete name' do
     athlete = Athlete.new 
-    athlete.name = 'Vlad Badica'
+    athlete.name = 'Mike Ross'
     athlete.sex = 'male'
     athlete.weight = 68.5
     athlete.age = 19
@@ -30,7 +30,7 @@ class AthleteTest < ActiveSupport::TestCase
     assert athlete.valid?
 
     athlete1 = Athlete.new
-    athlete1.name = 'Vlad Badica'
+    athlete1.name = 'Mike Ross'
     athlete1.sex = 'male'
     athlete1.weight = 68.5
     athlete1.age = 19

@@ -10,7 +10,7 @@ class CompetitionTest < ActiveSupport::TestCase
 
   test 'should save valid competition' do
     competition = Competition.new
-    competition.name = 'Vlad Badica'
+    competition.name = 'Sheffield'
     competition.date = Date.new(2019,1,12)
     competition.save
     assert competition.valid?

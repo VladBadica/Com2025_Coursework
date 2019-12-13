@@ -13,8 +13,8 @@
 ActiveRecord::Schema.define(version: 2019_12_13_130643) do
 
   create_table "athlete_competitions", force: :cascade do |t|
-    t.integer "athlete_id"
-    t.integer "competition_id"
+    t.integer "athlete_id", null: false
+    t.integer "competition_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["athlete_id"], name: "index_athlete_competitions_on_athlete_id"
