@@ -24,13 +24,14 @@
  $footer-color: #FCC133;
  $font-sizeheader: 25px;
 
- body {
+body {
     font-family: $font;
     position: relative;
     min-height: 100%;
     margin: 0px;
     background-color: $color;
 }
+// this pushes the footer down so it sticks to the bottom
 div#myID{
      min-height: calc(100vh - 166px);
 }

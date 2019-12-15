@@ -7,9 +7,11 @@
           %li= message
 
   .field
+    -# user inputs the name of the competition 
     = f.label :name
     = f.text_field :name
   .field
+    -# user inputs the date of the competition 
     = f.label :date
     = f.date_select :date
   .actions

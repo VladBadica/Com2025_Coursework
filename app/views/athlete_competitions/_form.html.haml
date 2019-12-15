@@ -7,9 +7,11 @@
           %li= message
 
   .field
+    -# we allow the user to choose between the existing athletes  
     = f.label :athlete_id
     = f.select :athlete_id, options_for_select(@athletes.collect {|a| [ a.name, a.id ] }) 
   .field
+    -# we allow the user to choose between the existing competitions
     = f.label :competition_id
     = f.select :competition_id, options_for_select(@competitions.collect {|c| [ c.name, c.id ] })
   .actions

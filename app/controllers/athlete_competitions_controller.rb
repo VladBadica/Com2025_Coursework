@@ -9,10 +9,13 @@ class AthleteCompetitionsController < ApplicationController
 
   # GET /athlete_competitions/1
   # GET /athlete_competitions/1.json
+  
   def show
   end
 
   # GET /athlete_competitions/new
+  # We pass the athletes and competitions as well
+  # This way they can be selected for the creation of a new AthleteCompetition
   def new
     @athletes = Athlete.all
     @competitions = Competition.all

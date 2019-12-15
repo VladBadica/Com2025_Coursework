@@ -7,18 +7,23 @@
           %li= message
 
   .field
+    -# user inputs the name
     = f.label :name
     = f.text_field :name
   .field
+    -# user selects the sex, can be male or female
     = f.label :sex
     = f.select :sex, options_for_select(['male', 'female'])
   .field
+    -# user selects the age, can be between 18 and 100 
     = f.label :age
     = f.number_field :age, min: 18, max: 100
   .field
+    -# user selects the weight, can be between 40 and 150
     = f.label :weight
     = f.number_field :weight, min: 40, max: 150, step: :any
   .field
+    -# user can add a description to an athlete 
     = f.label :description
     = f.text_field :description
   .actions

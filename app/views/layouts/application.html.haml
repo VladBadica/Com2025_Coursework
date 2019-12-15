@@ -20,10 +20,13 @@
     - flash.each do |key, value|
       = content_tag :div, content_tag(:p, value), id: "#{key}" unless value.blank?
     
+    -# the header of the website 
     = render 'shared/header'
     
     %main
+      -# wrapped it in div so that the page can be formatted and make the footer stick to the bottom 
       %div#myID
         = yield
 
+    -# the footer of the website 
     =render 'shared/footer'

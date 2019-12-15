@@ -1,7 +1,8 @@
+-# Determines how the contact page is showed to the user
 %h1= t('.title')
 %p= t('.contact_us')
 
- 
+-# A form that the user can input into to contact for help
 =form_tag request_contact_path, method: 'post' do
     = label_tag :name, t('.name')
     = text_field_tag :name, '', title: t('.enter_name'), size: 30
