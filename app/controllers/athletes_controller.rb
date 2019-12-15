@@ -28,7 +28,7 @@ class AthletesController < ApplicationController
 
     respond_to do |format|
       if @athlete.save
-        format.html { redirect_to @athlete, notice: 'Athlete was successfully created.' }
+        format.html { redirect_to @athlete, notice: I18n.t('athletes_controller.created') }
         format.json { render :show, status: :created, location: @athlete }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class AthletesController < ApplicationController
   def update
     respond_to do |format|
       if @athlete.update(athlete_params)
-        format.html { redirect_to @athlete, notice: 'Athlete was successfully updated.' }
+        format.html { redirect_to @athlete, notice: I18n.t('athletes_controller.updated') }
         format.json { render :show, status: :ok, location: @athlete }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class AthletesController < ApplicationController
   def destroy
     @athlete.destroy
     respond_to do |format|
-      format.html { redirect_to athletes_url, notice: 'Athlete was successfully destroyed.' }
+      format.html { redirect_to athletes_url, notice: I18n.t('athletes_controller.destroyed') }
       format.json { head :no_content }
     end
   end

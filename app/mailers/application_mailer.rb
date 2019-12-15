@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default to: "info@myjudo.com", from: "info@myjudo.com"
+  default to: I18n.t('mailer.mailto'), from: I18n.t('mailer.mailfrom')
   layout 'mailer'
 end

@@ -33,7 +33,7 @@ class AthleteCompetitionsController < ApplicationController
 
     respond_to do |format|
       if @athlete_competition.save
-        format.html { redirect_to @athlete_competition, notice: 'Athlete competition was successfully created.' }
+        format.html { redirect_to @athlete_competition, notice: I18n.t('athletes_competitions_controller.created') }
         format.json { render :show, status: :created, location: @athlete_competition }
       else
         format.html { render :new }
@@ -47,7 +47,7 @@ class AthleteCompetitionsController < ApplicationController
   def update
     respond_to do |format|
       if @athlete_competition.update(athlete_competition_params)
-        format.html { redirect_to @athlete_competition, notice: 'Athlete competition was successfully updated.' }
+        format.html { redirect_to @athlete_competition, notice: I18n.t('athletes_competitions_controller.updated') }
         format.json { render :show, status: :ok, location: @athlete_competition }
       else
         format.html { render :edit }
@@ -61,7 +61,7 @@ class AthleteCompetitionsController < ApplicationController
   def destroy
     @athlete_competition.destroy
     respond_to do |format|
-      format.html { redirect_to athlete_competitions_url, notice: 'Athlete competition was successfully destroyed.' }
+      format.html { redirect_to athlete_competitions_url, notice: I18n.t('athletes_competitions_controller.destroyed') }
       format.json { head :no_content }
     end
   end

@@ -45,4 +45,13 @@ class AthletesControllerTest < ActionDispatch::IntegrationTest
 
     assert_redirected_to athletes_url
   end
+
+  test "should not create athlete" do
+    assert_difference('Athlete.count') do
+      post athletes_url, params: { athlete: { age: @athlete.age, description: @athlete.description, name: @athlete.name + 'rnd1', sex: "random", weight: @athlete.weight } }
+    end
+  
+    assert_redirected_to athlete_url(Athlete.last)
+  end
 end
+

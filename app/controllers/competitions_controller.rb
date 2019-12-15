@@ -28,7 +28,7 @@ class CompetitionsController < ApplicationController
 
     respond_to do |format|
       if @competition.save
-        format.html { redirect_to @competition, notice: 'Competition was successfully created.' }
+        format.html { redirect_to @competition, notice: I18n.t('competitions_controller.created') }
         format.json { render :show, status: :created, location: @competition }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class CompetitionsController < ApplicationController
   def update
     respond_to do |format|
       if @competition.update(competition_params)
-        format.html { redirect_to @competition, notice: 'Competition was successfully updated.' }
+        format.html { redirect_to @competition, notice: I18n.t('competitions_controller.updated') }
         format.json { render :show, status: :ok, location: @competition }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class CompetitionsController < ApplicationController
   def destroy
     @competition.destroy
     respond_to do |format|
-      format.html { redirect_to competitions_url, notice: 'Competition was successfully destroyed.' }
+      format.html { redirect_to competitions_url, notice: I18n.t('competitions_controller.destroyed') }
       format.json { head :no_content }
     end
   end

@@ -30,7 +30,7 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  app_title: My Website
+  app_title: Judo Competitions
   app_description: A website to manage the Judo competitions and athletes
   home:
     aboutUs: 
@@ -75,3 +75,25 @@ en:
       signups: Comp Signups
     footer: 
       footer_message: "&copy; My Website"
+
+  athletes_controller:    
+    created: Athlete was successfully created.
+    updated: Athlete was successfully updated.
+    destroyed: Athlete was successfully destroyed.
+
+  competitions_controller:    
+    created: Competition was successfully created.
+    updated: Competition was successfully updated.
+    destroyed: Competition was successfully destroyed.
+
+  athletes_competitions_controller:
+    created: Athlete competition was successfully created.
+    updated: Athlete competition was successfully updated.
+    destroyed: Athlete competition was successfully destroyed.
+
+  mailer:
+    mailto: info@myjudo.com
+    mailfrom: info@myjudo.com
+  contact_mailer:
+    message: Could you get in touch please?
+
