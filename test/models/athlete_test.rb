@@ -46,4 +46,14 @@ class AthleteTest < ActiveSupport::TestCase
     athlete = Athlete.new(name: 'Name', sex: 'males', age: 20, weight: 70)
     assert_not athlete.save
   end
+
+  test 'should not save athlete invalid age' do
+    athlete = Athlete.new(name: 'Name', sex: 'male', age: 202, weight: 70)
+    assert_not athlete.save
+  end
+
+  test 'should not save athlete invalid description' do
+    athlete = Athlete.new(name: 'Name', sex: 'male', age: 20, weight: 70, description: "A 414*^£")
+    assert_not athlete.save
+  end
 end

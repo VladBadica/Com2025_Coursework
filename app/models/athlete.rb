@@ -5,7 +5,8 @@ class Athlete < ApplicationRecord
     message: "Only allows letters, max 30 chars" }
     validates :sex, presence: true, format: { with: /\A(male|female)\z/,
     message: "Only male or female" }
-    validates :weight, presence: true
+    validates :weight, presence: true, format: { with: /\A^[0-9]{2,3}.*[0-9]*\z/,
+    message: "Age between 18 and 100" }
     validates :age, presence: true, format: { with: /\A^[1-9][0-9]?$|^100\z/,
     message: "Age between 18 and 100" }
     validates :description, format: { with: /\A[a-zA-Z0-9,.() ]*+\z/,
