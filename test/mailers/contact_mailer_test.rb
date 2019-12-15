@@ -25,4 +25,10 @@ class ContactMailerTest < ActionMailer::TestCase
     assert_equal ['info@myjudo.com'], mail.to
     assert_not_equal ['infomyjudo.com'], mail.from
   end
+
+  test "invalid contact mailer" do
+    mail = ContactMailer.new
+
+    mail.nil?
+  end
 end

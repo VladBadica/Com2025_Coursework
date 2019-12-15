@@ -74,7 +74,8 @@ en:
       home: Home
       signups: Comp Signups
     footer: 
-      footer_message: "&copy; My Website"
+      footer_name: "&copy; Judo C&A Management"
+      footer_email: "Contact us on: info@myjudo.com"
 
   athletes_controller:    
     created: Athlete was successfully created.
